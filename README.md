@@ -1,4 +1,4 @@
-## Building DigitalNote
+## Building AmazoniaCoin
 
 ### On *nix:
 

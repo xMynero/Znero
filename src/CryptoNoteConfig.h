@@ -121,7 +121,8 @@ const size_t   P2P_DEFAULT_HANDSHAKE_INVOKE_TIMEOUT          = 5000;          //
 const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "85ae8734f90bc1ee295ceb0ec05a49852d4dbbc9d1c27a619b5f4bdf26a0196e";
 
 const std::initializer_list<const char*> SEED_NODES = {
-    "34.217.9.52:17991"
+    "34.217.9.52:17991",
+    "amznode.fslabs.co:17991"
 };
 
 struct CheckpointData {
