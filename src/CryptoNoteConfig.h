@@ -23,8 +23,8 @@ const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW             = 30;
 const uint64_t MONEY_SUPPLY                                  = UINT64_C(50770000000000000);
 
 const size_t   CRYPTONOTE_REWARD_BLOCKS_WINDOW               = 100;
-const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE     = 200000; //size of block (bytes) after which reward for block calculated using block size
-const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_V1  = 32000; //size of block (bytes) after which reward for block calculated using block size
+const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE     = 2000; //size of block (bytes) after which reward for block calculated using block size
+const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_V1  = 3200; //size of block (bytes) after which reward for block calculated using block size
 const size_t   CRYPTONOTE_COINBASE_BLOB_RESERVED_SIZE        = 600;
 const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT              = 8;
 // COIN - number of smallest units in one coin
@@ -39,10 +39,10 @@ const size_t   DIFFICULTY_CUT                                = 30;  // timestamp
 const size_t   DIFFICULTY_LAG                                = 15;
 static_assert(2 * DIFFICULTY_CUT <= DIFFICULTY_WINDOW - 2, "Bad DIFFICULTY_WINDOW or DIFFICULTY_CUT");
 
-const uint64_t DEPOSIT_MIN_AMOUNT                            = 150 * COIN;
-const uint32_t DEPOSIT_MIN_TERM                              = 11000;
-const uint32_t DEPOSIT_MAX_TERM                              = 10 * 12 * 11000;
-const uint64_t DEPOSIT_MIN_TOTAL_RATE_FACTOR                 = 77000;
+const uint64_t DEPOSIT_MIN_AMOUNT                            = 100 * COIN;
+const uint32_t DEPOSIT_MIN_TERM                              = 110;
+const uint32_t DEPOSIT_MAX_TERM                              = 10 * 12 * 110;
+const uint64_t DEPOSIT_MIN_TOTAL_RATE_FACTOR                 = 770;
 const uint64_t DEPOSIT_MAX_TOTAL_RATE                        = 11;
 static_assert(DEPOSIT_MIN_TERM > 0, "Bad DEPOSIT_MIN_TERM");
 static_assert(DEPOSIT_MIN_TERM <= DEPOSIT_MAX_TERM, "Bad DEPOSIT_MAX_TERM");
@@ -123,6 +123,7 @@ const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "85ae8734f90bc1ee
 const std::initializer_list<const char*> SEED_NODES = {
     "159.65.132.179:17991",
     "206.189.232.35:17991",
+    "192.168.43.219:17991",
 };
 
 struct CheckpointData {
