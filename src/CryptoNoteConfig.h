@@ -14,7 +14,7 @@ namespace parameters {
 const uint64_t CRYPTONOTE_MAX_BLOCK_NUMBER                   = 500000000;
 const size_t   CRYPTONOTE_MAX_BLOCK_BLOB_SIZE                = 500000000;
 const size_t   CRYPTONOTE_MAX_TX_SIZE                        = 1000000000;
-const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX       = 0x2b7f37; //  "Xmyr"
+const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX       = 0x12bf37; //  "Xmy"
 const size_t   CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW          = 6;
 const uint64_t CRYPTONOTE_BLOCK_FUTURE_TIME_LIMIT            = 60 * 60 * 2;
 
@@ -44,6 +44,7 @@ const uint32_t DEPOSIT_MIN_TERM                              = 110;
 const uint32_t DEPOSIT_MAX_TERM                              = 10 * 12 * 110;
 const uint64_t DEPOSIT_MIN_TOTAL_RATE_FACTOR                 = 770;
 const uint64_t DEPOSIT_MAX_TOTAL_RATE                        = 11;
+    
 static_assert(DEPOSIT_MIN_TERM > 0, "Bad DEPOSIT_MIN_TERM");
 static_assert(DEPOSIT_MIN_TERM <= DEPOSIT_MAX_TERM, "Bad DEPOSIT_MAX_TERM");
 static_assert(DEPOSIT_MIN_TERM * DEPOSIT_MAX_TOTAL_RATE > DEPOSIT_MIN_TOTAL_RATE_FACTOR, "Bad DEPOSIT_MIN_TOTAL_RATE_FACTOR or DEPOSIT_MAX_TOTAL_RATE");
@@ -86,7 +87,7 @@ const uint64_t MIN_BLOCK_REWARD                              = (UINT64_C(150) * 
 const uint64_t REWARD_HALVING_INTERVAL                       = (UINT64_C(11000));
 
 const char     CRYPTONOTE_NAME[]                             = "mynero";
-const char     GENESIS_COINBASE_TX_HEX[]                     = "010601ff000180acc7f037029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101f1c82d68543a2fa773b60b2d1a28e6b6bdc72798bde90c7ed29326da51df7447";
+const char     GENESIS_COINBASE_TX_HEX[]                     = "";
 const uint32_t GENESIS_NONCE                                 = 420;
 
 const uint8_t  TRANSACTION_VERSION_1                         =  1;
