@@ -87,7 +87,7 @@ const uint64_t MIN_BLOCK_REWARD                              = (UINT64_C(150) * 
 const uint64_t REWARD_HALVING_INTERVAL                       = (UINT64_C(11000));
 
 const char     CRYPTONOTE_NAME[]                             = "xMynero";
-const char     GENESIS_COINBASE_TX_HEX[]                     = "";
+const char     GENESIS_COINBASE_TX_HEX[]                     = "010601ff000180acc7f037029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121019e7687918bd9fac90b8c0e721203149c69604bfcbcb11536b4acbe97a424834f";
 const uint32_t GENESIS_NONCE                                 = 420;
 
 const uint8_t  TRANSACTION_VERSION_1                         =  1;
