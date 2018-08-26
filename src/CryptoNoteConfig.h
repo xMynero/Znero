@@ -14,7 +14,7 @@ namespace parameters {
 const uint64_t CRYPTONOTE_MAX_BLOCK_NUMBER                   = 500000000;
 const size_t   CRYPTONOTE_MAX_BLOCK_BLOB_SIZE                = 500000000;
 const size_t   CRYPTONOTE_MAX_TX_SIZE                        = 1000000000;
-const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX       = 0x1ebf37; //  "XmyR"
+const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX       = 0x7241; //  "ZR"
 const size_t   CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW          = 6;
 const uint64_t CRYPTONOTE_BLOCK_FUTURE_TIME_LIMIT            = 60 * 60 * 2;
 
@@ -77,7 +77,7 @@ const char     CRYPTONOTE_BLOCKS_FILENAME[]                  = "blocks.dat";
 const char     CRYPTONOTE_BLOCKINDEXES_FILENAME[]            = "blockindexes.dat";
 const char     CRYPTONOTE_BLOCKSCACHE_FILENAME[]             = "blockscache.dat";
 const char     CRYPTONOTE_POOLDATA_FILENAME[]                = "poolstate.bin";
-const char     P2P_NET_DATA_FILENAME[]                       = "p2pstate.bin";
+const char     P2P_NET_DATA_FILENAME[]                       = "p2psztate.bin";
 const char     CRYPTONOTE_BLOCKCHAIN_INDICES_FILENAME[]      = "blockchainindices.dat";
 const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json";
 } // parameters
@@ -86,7 +86,7 @@ const uint64_t START_BLOCK_REWARD                            = (UINT64_C(150) * 
 const uint64_t MIN_BLOCK_REWARD                              = (UINT64_C(150) * parameters::COIN);
 const uint64_t REWARD_HALVING_INTERVAL                       = (UINT64_C(11000));
 
-const char     CRYPTONOTE_NAME[]                             = "xMynero";
+const char     CRYPTONOTE_NAME[]                             = "Znero";
 const char     GENESIS_COINBASE_TX_HEX[]                     = "";
 const uint32_t GENESIS_NONCE                                 = 420;
 
